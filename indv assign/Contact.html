@@ -1,0 +1,58 @@
+<html>
+
+<head>
+
+    <title>Contact me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <header class="navbar">
+    <div class="logo">ALIA</div>
+    <nav>
+      <a href="index.html">Homepage</a>
+	  <a href="Biodata.html">Biodata</a>
+      <a href="Experience.html">Experience</a>
+	  <a href="Family.html">Family</a>
+      <a href="Education.html">Education</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="#" class="btn" onclick="openContact(event)">Contact me</a>
+  </nav>
+</header>
+
+<div class="overlay" id="overlay" onclick="closeContact()"></div>
+
+<aside class="contact-panel" id="contactPanel">
+  <button class="close-btn" onclick="closeContact()">✕</button>
+
+  <h2>Contact me</h2>
+
+  <div class="contact-info">
+    <p>📧alia123@gmail.com</p>
+    <p>📞 01118587543</p>
+    <p>📍 Alia, Malaysia</p>
+  </div>
+
+  <hr>
+
+  <h3>Social Media</h3>
+  <div class="social-icons">
+    <a href="https://wa.me/601118587543">📱</a>
+  </div>
+</aside>
+
+<script>
+  function openContact(e) {
+    e.preventDefault(); 
+    document.getElementById("contactPanel").classList.add("active");
+    document.getElementById("overlay").classList.add("active");
+  }
+
+  function closeContact() {
+    document.getElementById("contactPanel").classList.remove("active");
+    document.getElementById("overlay").classList.remove("active");
+  }
+</script>
+
+</body>
+</html>

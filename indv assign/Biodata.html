@@ -1,0 +1,72 @@
+<html>
+
+<head>
+
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header class="navbar">
+    <div class="logo">ALIA</div>
+    <nav>
+      <a href="index.html">Homepage</a>
+	  <a href="Biodata.html">Biodata</a>
+      <a href="Experience.html">Experience</a>
+	  <a href="Family.html">Family</a>
+      <a href="Education.html">Education</a>
+      <a href="Gallery.html">Gallery</a>
+	  <a href="Contact.html"class="btn">Contact me</a>     
+    </nav>
+</body>
+  </header>
+
+    <main>
+        <section class="about-me">
+            <div class="profile-pic">
+                <img src="personal pic2.jpeg" alt="Profile Picture">
+            </div>
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p>Hi! I'm <strong>Alia Athirah</strong>, and I am the fifth of five siblings. I currently live in Kepala Batas, Kedah. I'm really interested in travelling because it gives me the chance to discover new locations, engage with various cultures, and acquire worthwhile life experiences. I like to play games in my spare time because they help me unwind and improve my creativity and problem-solving abilities. I also enjoy watching films because they are entertaining and give me the chance to enjoy different genres and storytelling techniques. All things considered, my upbringing and hobbies have moulded me into an accepting person who values balance, personal development, and purposeful use of free time</p>
+
+                <div class="skills-cards">
+                    <div class="card">
+                        <h3>Hobbies</h3>
+                        <p>playing video games, listening to music</p>
+                    </div>
+                    <div class="card">
+                        <h3>Skill</h3>
+                        <p>Cooking, time management, team work</p>
+                    </div>
+                    <div class="card">
+                        <h3>Interest</h3>
+                        <p>travel, music, watching movies</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+	
+	<button class="sound-btn" onclick="playSound()">Click Me 🔊</button>
+
+    <audio id="clickSound">
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function playSound() {
+            const sound = document.getElementById("clickSound");
+            sound.currentTime = 0; // restart sound
+            sound.play();
+        }
+    </script>
+
+</body>
+</html>
+
+    <footer class="footer">
+	<br>
+	 <p style="text-align:left; padding:30px; font-size:20px; color:#800000"><b>Made by alia</b></p>
+	</footer>
+</body>
+</html>
